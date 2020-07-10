@@ -1,3 +1,11 @@
+//=========================loader=========================
+	var loading = document.getElementById("loading");
+
+	window.addEventListener('load', function(){
+		loading.style.display = 'none';
+	})
+//=========================loader=========================
+
 var um;
 function colorr(){
 	document.getElementById("usp").style.color = "black";
