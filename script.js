@@ -1,19 +1,31 @@
 var um;
-function colorr(){
+
+function reset(){
+	document.getElementById("wl").innerHTML="Choose One 👉";
+	document.getElementById("cor").style.color = "black";
+	document.getElementById("cop").style.color = "black";
+	document.getElementById("cos").style.color = "black";
+	document.getElementById("usr").style.color = "black";
 	document.getElementById("usp").style.color = "black";
 	document.getElementById("uss").style.color = "black";
+	ran="";
+	document.getElementById("usrr").checked = false;
+	document.getElementById("uspr").checked = false;
+	document.getElementById("ussr").checked = false;
+}
+
+function colorr(){
+	reset();
 	document.getElementById("usr").style.color = "red";
 	um = 1;
 }
 function colorg(){
-	document.getElementById("usr").style.color = "black";
-	document.getElementById("uss").style.color = "black";
+	reset();
 	document.getElementById("usp").style.color = "green";
 	um = 2;
 }
 function colorb(){
-	document.getElementById("usr").style.color = "black";
-	document.getElementById("usp").style.color = "black";
+	reset();
 	document.getElementById("uss").style.color = "blue";
 	um = 3;
 }
@@ -53,18 +65,4 @@ function usermove(){
 	} else {
 		document.getElementById("wl").innerHTML = "You Lose 😞";
 	}
-}
-
-function reset(){
-	document.getElementById("wl").innerHTML="Choose One 👉";
-	document.getElementById("cor").style.color = "black";
-	document.getElementById("cop").style.color = "black";
-	document.getElementById("cos").style.color = "black";
-	document.getElementById("usr").style.color = "black";
-	document.getElementById("usp").style.color = "black";
-	document.getElementById("uss").style.color = "black";
-	ran="";
-	document.getElementById("usrr").checked = false;
-	document.getElementById("uspr").checked = false;
-	document.getElementById("ussr").checked = false;
 }
